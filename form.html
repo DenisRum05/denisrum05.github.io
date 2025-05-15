@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <title>FL Studio Website</title>
+<link rel="stylesheet" href="styles3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]function(){(m[i].a=m[i].a[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(101712242, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/101712242" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+ <header> 
+ <div id="navbar">
+  <a href="lab11.html">Главная</a>
+  <a href="galery.html">Галерея</a>
+  <a href="about.html">Портфолио</a>
+  <a href="form.html">Обратная связь</a>
+</div> 
+</header>
+    <body>
+     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <header><h1>Регистрация на сайте</h1></header>
+        <div class="form">
+            <form id="fff" action="#">
+        <p>Зарегистрируйтесь.</p>
+                <div id="reg" class="name-surname">
+                    <label for="name"><b>Имя</b></label>
+                    <input autocomplete="off" class="f" required placeholder="Name" type="text" minlength="3" name="name" pattern="[A-Z]{1}[a-z]{2,14}" title="Введите имя буквами латинского алфавита (не менее 3 символов и не более 15) начиная с большой буквы">
+                    <label for="surname"><b>Фамилия</b></label>
+                    <input autocomplete="off" class="f" required placeholder="Suname" type="text" minlength="3" name="surname" pattern="[A-Z]{1}[a-z]{2,14}" title="Введите фамилию буквами латинского алфавита (не менее 3 символов и не более 15) начиная с большой буквы">
+                </div>
+                <div id="reg" class="login">
+                    <label for="login"><b>Логин</b></label>
+                    <input autocomplete="off" class="f" required placeholder="pro12" name="login" minlenght="5" maxlength="8" title="Логин должен содержать от 5 до 8 символов">
+                </div>
+                <div id="reg" class="number">
+                    <label for="number"><b>Номер</b></label>
+                    <input autocomplete="off" class="f" id="tl" required type="tel" placeholder="8-XXX-XXX-XX-XX" minlenght="11" name="number" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                </div>
+                <div id="reg" class="e-mail">
+                    <label for="e-mail"><b>E-mail</b></label>
+                    <input autocomplete="off" class="f" required placeholder="mymail@gmail.com" name="e-mail" type="text" pattern="[A-z0-9_.-]{1,}@[A-z0-9_.-]{1,}\.[A-z]{2,8}">
+                </div>
+                <div id="reg" class="password">
+                    <label for="psw"><b>Пароль</b></label>
+                    <input autocomplete="off" class="f" id="password-1" title="Обязательно верхний, нижний регистр, знак подчеркивания и цифры. Пароль должен содержать от 8 до 20 символов." required placeholder="password" type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[_]).{8,20}" required>
+                    <div class="p1">
+                        <label><input type="checkbox" class="password-checkbox"> Показать пароль</label>
+                    </div>
+                    <br>
+                    <label autocomplete="off" for="psw-repeat"><b>Повторите пароль</b></label>
+                    <input class="f" id="password-2" title="Обязательно верхний, нижний регистр, знак подчеркивания и цифрыю Пароль должен содержать от 8 до 20 символов." required placeholder="password" type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[_]).{8,20}">
+                    <div class="p2">
+                        <label><input type="checkbox" class="password-checkboxx"> Показать пароль</label> 
+                    </div>
+                    <div class="error"></div>
+                </div>
+                <div id="reg" class="paul">
+                    <label for="paul"><b>Пол</b></label>
+                    <div>
+                        <input type="radio" name="gender" value="male" checked> Мужчина
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" value="famale"> Женщина
+                    </div>
+                </div>
+                <div id="reg" class="date">
+                    <label for="date"><b>Дата рождения</b></label>
+                    <input required name="bdate" id="txtDate" type="date" lang="en">
+                </div> 
+                <div id="reg">
+                    <button type="submit" class="registerbtn" id="submit">Регистрация</button>
+                </div>
+            </form>
+        </div> 
+        <footer> <div class="icon-bar">
+  <a class="active" href="lab11.html"><i class="fa fa-home"></i> <img src="home.png" width = "10%"></a>
+  <a href="https://vk.com/smep501"><i class="fa fa-search"></i> <img src="vk.png" width = "10%"></a>
+  <a href="https://vk.com/denisrum05"><i class="fa fa-envelope"></i> <img src="vk.png" width = "10%"></a>
+  <a href="https://t.me/+EJJbqpcXKCJmODky"><i class="fa fa-globe"></i> <img src="tg.png" width = "10%"></a>
+  <a href="https://ok.ru/"><i class="fa fa-trash"></i> <img src="ok.png" width = "10%"></a>
+</div>
+ </footer>
+</body>
+
+<script src = "scroll.js"></script>
+<script src = "grid.js"></script>
+</html>
